@@ -1,0 +1,1234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Lora', serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/navbar-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+}
+
+.nav-bar img {
+    width: 200px;
+}
+
+.img-nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.img-nav img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-left {
+    position: absolute;
+    left: -100px;
+    top: 50px
+}
+
+.nav-left h1 {
+    color: aliceblue;
+}
+
+.nav-right {
+    position: absolute;
+    right: 0;
+    top: 50px
+}
+
+.nav-right a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+.nav-content {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: #fba937;
+    text-align: center;
+    top: 100%;
+}
+
+.nav-content p {
+    color: aliceblue;
+    line-height: 15px;
+}
+
+.nav-play {
+    position: absolute;
+    font-size: 100px;
+    top: 280%;
+    left: 45%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 73.5%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(170px, 567%);
+    border-radius: 10px;
+}
+
+.grid-item1 {
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    color: #fba937;
+    left: 15px;
+}
+
+.grid-item1::before {
+    content: "";
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    left: 101%;
+    border-left: 2px solid #fba937;
+    transform: translateX(-50%);
+    height: 12vh;
+}
+
+.grid-item2 {
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    color: white;
+    width: 150%;
+    margin-left: 28px;
+}
+
+.grid-item2 p {
+    font-size: 1.1em;
+}
+
+.grid-item2::before {
+    content: "";
+    position: absolute;
+    top: -14%;
+    bottom: 0;
+    left: 93%;
+    /* Điều chỉnh vị trí của border */
+    border-left: 2px solid #fba937;
+    transform: translateX(-50%);
+    /* Dịch chuyển border để nó nằm giữa */
+    height: 12vh;
+}
+
+.grid-item3 button {
+    position: absolute;
+    width: 180px;
+    height: 15vh;
+    background: #fba937;
+    transform: translate(188px, -50%);
+    border-radius: 10px;
+    color: white;
+    font-size: 2.0em;
+}
+
+.grid-item3 i {
+    font-size: 1.5em;
+}
+
+.grid-item3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.art {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #0000;
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.art .menu-title {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 50px;
+    top: 20%;
+}
+
+.art .menu-img img {
+    padding-right: 20px;
+    padding-left: 60px;
+}
+
+.menu-detail {
+    background-image: url("/img/navbar-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    height: 165vh;
+}
+
+.menu-detail .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-detail .container .row {
+    display: flex;
+    /* Sử dụng Flexbox để căn cứng các phần tử con */
+    justify-content: space-between;
+    /* Canh các phần tử con theo hai bên */
+}
+
+.menu-detail .container .detail1 {
+    display: flex;
+    /* Sử dụng Flexbox cho phần detail */
+    align-items: center;
+    /* Căn các phần tử con theo chiều dọc */
+    padding-top: 50px;
+}
+
+.menu-detail .container .detail1 img {
+    /* Khoảng cách giữa ảnh và nội dung bên phải */
+    padding-right: 45px;
+    width: 450px;
+    height: auto;
+}
+
+.menu-detail .container .detail1 .text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding-left: 18px;
+    /* Cho phần nội dung chiếm phần còn lại của detail */
+}
+
+.menu-detail .container .detail1 .text button {
+    padding: 10px 51px;
+    border-radius: 5px;
+    background-color: #fba937;
+}
+
+.menu-detail .container .detail1 .text p {
+    font-size: 0.9em;
+}
+
+.menu-detail .container .detail1 .text a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Detail2*/
+
+.menu-detail .container .detail2 {
+    display: flex;
+    /* Sử dụng Flexbox cho phần detail */
+    align-items: center;
+    /* Căn các phần tử con theo chiều dọc */
+    padding-top: 50px;
+}
+
+.menu-detail .container .detail2 img {
+    /* Khoảng cách giữa ảnh và nội dung bên phải */
+    padding-right: 45px;
+    width: 450px;
+    height: auto;
+    position: relative;
+    left: 65.5%;
+}
+
+.menu-detail .container .detail2 .text {
+    flex-grow: -1;
+    direction: rtl;
+    padding-left: 17px;
+    /* Cho phần nội dung chiếm phần còn lại của detail */
+}
+
+.menu-detail .container .detail2 .text button {
+    padding: 10px 42px;
+    border-radius: 5px;
+    background-color: #fba937;
+}
+
+.menu-detail .container .detail2 .text p {
+    font-size: 0.9em;
+}
+
+.menu-detail .container .detail2 .text a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/**Detai3**/
+
+.menu-detail .container .detail3 img {
+    width: 62%;
+    height: auto;
+    position: relative;
+    left: -13.5%;
+    top: 8%;
+}
+
+.menu-detail .container .detail3 .text {
+    flex-grow: -1;
+    direction: rtl;
+    padding-left: -16%;
+    position: relative;
+    right: 40.5%;
+    top: -42%;
+}
+
+.menu-detail .container .detail3 .text button {
+    padding: 10px 42px;
+    border-radius: 5px;
+    background-color: #fba937;
+}
+
+.menu-detail .container .detail3 .text p {
+    font-size: 0.9em;
+}
+
+.menu-detail .container .detail3 .text a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/**Detail4**/
+
+.menu-detail .container .detail4 {
+    display: flex;
+    /* Sử dụng Flexbox cho phần detail */
+    align-items: center;
+    /* Căn các phần tử con theo chiều dọc */
+    padding-top: 50px;
+}
+
+.menu-detail .container .detail4 img {
+    width: 62%;
+    height: auto;
+    position: relative;
+    left: 52%;
+    top: -76%;
+}
+
+.menu-detail .container .detail4 .text {
+    flex-grow: -1;
+    direction: rtl;
+    padding-left: -16%;
+    position: relative;
+    right: 22.3%;
+    top: -77%;
+}
+
+.menu-detail .container .detail4 .text button {
+    padding: 10px 42px;
+    border-radius: 5px;
+    background-color: #fba937;
+}
+
+.menu-detail .container .detail4 .text p {
+    font-size: 0.9em;
+}
+
+.menu-detail .container .detail4 .text a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/**Menu Hero**/
+
+.menu-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu-hero h2 {
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+.menu-hero p {
+    color: #fba937;
+    font-size: 0.9em;
+    font-family: 'Lora', serif;
+}
+
+.menu-hero .container {
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+}
+
+.frap {
+    padding-top: 70px;
+    display: flex;
+    text-align: center;
+}
+
+.frap .hero {
+    margin-left: 56px;
+    text-align: left;
+}
+
+.frap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50% 2fr;
+    gap: 0px;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero .line3 .img-hero4 {
+    border-radius: 50%;
+}
+
+.hero .line1 .img-hero2 {
+    border-radius: 50%;
+}
+
+.hero:nth-child(2) {
+    display: grid;
+    grid-template-rows: 60% 150%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero:nth-child(4) {
+    display: grid;
+    grid-template-rows: 61% 150%;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 32% 2fr;
+}
+
+.line1 h6 {
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+.orange-text {
+    color: #fba937;
+}
+
+.line2 p {
+    font-size: 0.8em;
+    line-height: 1.5rem;
+    color: white;
+}
+
+.line4 p {
+    font-size: 0.8em;
+    line-height: 1.5rem;
+    color: white;
+}
+
+.line3 h6 {
+    padding-top: 14px;
+    font-size: 0.9em;
+    line-height: 1.9rem;
+}
+
+.line3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 36% 2fr;
+}
+
+.frap button {
+    position: absolute;
+    width: 200px;
+    height: 5vh;
+    border-radius: 5px;
+    top: 80%;
+    left: 43%;
+    border: 2px solid #fba937;
+    background: #0000;
+}
+
+.frap a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/**Kaiber Studio**/
+
+.kaiber-studio {
+    width: 100%;
+    height: 85vh;
+    background: #000;
+}
+
+.kaiber-studio .kaiberstudio-img1 {
+    border-radius: 50%;
+}
+
+.kaiber-title {
+    display: block;
+    text-align: center;
+}
+
+.kaiber-title h2 {
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+.kaiber-title p {
+    font-family: 'Lora', serif;
+    color: #fba937
+}
+
+.kaiber-frap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Chia thành 3 cột bằng nhau */
+    gap: 10px;
+    /* Khoảng cách giữa các ô */
+    align-items: center;
+    justify-content: center;
+    padding: 40px 50px;
+}
+
+.kaiber-single {
+    text-align: center;
+    /* Căn giữa nội dung trong mỗi ô */
+    margin: 0 50px;
+}
+
+.kaiber-single img {
+    width: 250px;
+    height: 40vh;
+    padding-bottom: 20px;
+}
+
+.kaiber-single h3 {
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+.kaiber-single p {
+    color: #fba937;
+    font-family: 'Lora', serif;
+}
+
+.kaiber-studio button {
+    margin-top: 50px;
+    position: relative;
+    width: 200px;
+    height: 5vh;
+    left: 43.1%;
+    border-radius: 5px;
+    border: 2px solid #fba937;
+    background: #0000;
+}
+
+.kaiber-studio a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/**Kaiber Free **/
+
+.kaiber-free {
+    padding-top: 50px;
+    width: 100%;
+    height: 45vh;
+    background: #000;
+}
+
+.kaiber-free-title {
+    display: block;
+    text-align: center;
+}
+
+.kaiber-free-title h2 {
+    color: white;
+}
+
+.kaiber-free-title p {
+    padding-top: 10px;
+    color: #fba937;
+}
+
+.kaiber-free button {
+    margin-top: 50px;
+    position: relative;
+    width: 200px;
+    height: 5vh;
+    left: 42%;
+    border-radius: 5px;
+    border: 2px solid #fba937;
+    background: #0000;
+}
+
+.kaiber-free a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/**Footer*/
+
+.kaiber-footer {
+    background-color: #fba937;
+    color: #fff;
+    padding: 15px 60px;
+    height: 15vh;
+    border-bottom: 2px solid #000;
+}
+
+.kaiber-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.kaiber-footer .container .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+}
+
+.kaiber-footer .kaiber-footer-menu {
+    display: grid;
+    grid-template-columns: 32% 2fr;
+}
+
+.kaiber-footer-menu a {
+    color: #fff;
+}
+
+.kaiber-footer-menu .left {
+    margin-left: 115px;
+}
+
+.kaiber-footer-menu .right {
+    margin-left: 55px;
+}
+
+footer {
+    text-align: center;
+    background-color: #fba937;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.kaiber-logo-footer {
+    width: 56%;
+    height: 5vh;
+    top: 20%;
+    margin-top: 17px;
+}
+
+@media all and (max-width: 1280px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 14vh;
+        width: 73.5%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: translate(170px, 615%);
+        border-radius: 10px;
+    }
+    .grid-item1 h1 {
+        font-size: 2rem;
+    }
+    .grid-item1::before {
+        content: "";
+        position: absolute;
+        top: 5%;
+        bottom: 0;
+        left: 94%;
+        border-left: 2px solid #fba937;
+        transform: translateX(-50%);
+        height: 10vh;
+    }
+    .grid-item2 {
+        text-align: left;
+        justify-content: center;
+        position: relative;
+        color: white;
+        width: 145%;
+        padding-left: 0%;
+        padding-top: 3%;
+        left: -10%;
+    }
+    .grid-item2 p {
+        font-size: 1rem;
+    }
+    .grid-item3 button {
+        position: absolute;
+        width: 161px;
+        height: 14vh;
+        background: #fba937;
+        transform: translate(92%, -50%);
+        border-radius: 10px;
+        color: white;
+        font-size: 1.8em;
+    }
+    .grid-item2::before {
+        content: "";
+        position: absolute;
+        top: -1%;
+        bottom: 0;
+        left: 103%;
+        border-left: 2px solid #fba937;
+        transform: translateX(-50%);
+        height: 10vh;
+    }
+    .art .menu-img img {
+        width: 274px;
+        height: 400px;
+    }
+    .hero:nth-child(2) {
+        display: grid;
+        grid-template-rows: 77% 135%;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero:nth-child(4) {
+        display: grid;
+        grid-template-rows: 75% 121%;
+        align-items: center;
+        justify-content: center;
+    }
+    .frap .img-hero1 {
+        width: 200px;
+        height: 200px;
+    }
+    .frap .img-hero2 {
+        width: 70px;
+    }
+    .frap .img-hero3 {
+        width: 200px;
+        height: 200px;
+    }
+    .frap .img-hero4 {
+        width: 70px;
+    }
+    .line1 h6 {
+        font-size: 0.65em;
+        line-height: 1;
+    }
+    .line3 h6 {
+        font-size: 0.65em;
+        line-height: 2;
+    }
+    .line2 p {
+        font-size: 0.7em;
+        line-height: 1rem;
+        color: white;
+    }
+    .line1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 31% 2fr;
+    }
+    .line4 p {
+        font-size: 0.7em;
+        line-height: 1rem;
+        color: white;
+    }
+    .frap button {
+        position: absolute;
+        width: 200px;
+        height: 5vh;
+        border-radius: 5px;
+        top: 80%;
+        left: 42%;
+        border: 2px solid #fba937;
+        background: #0000;
+    }
+    .menu-detail {
+        background-image: url(/img/navbar-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 20px;
+        height: 142vh;
+    }
+    /**Daital1**/
+    .menu-detail .container .detail1 img {
+        padding-right: 40px;
+        width: 370px;
+        height: 26vh;
+        margin-left: 87.5px;
+    }
+    .menu-detail .container .detail1 .text {
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding-left: 45px;
+    }
+    .menu-detail .container .detail1 .text h3 {
+        font-size: 1.4rem;
+    }
+    .menu-detail .container .detail1 .text p {
+        font-size: 0.9rem;
+    }
+    .menu-detail .container .detail1 .text button {
+        padding: 10px 39px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    /**Daital2**/
+    .menu-detail .container .detail2 img {
+        padding-right: 40px;
+        width: 370px;
+        height: 26vh;
+        margin-left: 12.5px;
+    }
+    .menu-detail .container .detail2 .text {
+        flex-grow: -1;
+        direction: rtl;
+        padding-left: 116px;
+    }
+    .menu-detail .container .detail2 .text h3 {
+        font-size: 1.4rem;
+    }
+    .menu-detail .container .detail2 .text p {
+        font-size: 0.9rem;
+    }
+    .menu-detail .container .detail2 .text button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    /**Daital3**/
+    .menu-detail .container .detail3 img {
+        padding-right: 40px;
+        width: 55%;
+        height: 28vh;
+        margin-left: 92.5px;
+    }
+    .menu-detail .container .detail3 .text {
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding-left: 45px;
+    }
+    .menu-detail .container .detail3 .text h3 {
+        font-size: 1.4rem;
+    }
+    .menu-detail .container .detail3 .text p {
+        font-size: 0.9rem;
+    }
+    .menu-detail .container .detail3 .text button {
+        padding: 10px 29px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    /**Daital4**/
+    .menu-detail .container .detail4 img {
+        padding-right: 40px;
+        width: 54%;
+        height: 26vh;
+        margin-left: 38.5px;
+    }
+    .menu-detail .container .detail4 .text {
+        flex-grow: -1;
+        direction: rtl;
+        padding-left: 77px;
+    }
+    .menu-detail .container .detail4 .text h3 {
+        font-size: 1.4rem;
+    }
+    .menu-detail .container .detail4 .text p {
+        font-size: 0.9rem;
+    }
+    .menu-detail .container .detail4 .text button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    .kaiber-footer .kaiber-footer-menu {
+        display: grid;
+        grid-template-columns: 43% 2fr;
+    }
+    .kaiber-footer-menu .left {
+        margin: 1% 60%;
+    }
+    .kaiber-footer-menu .right {
+        margin-left: 20px;
+    }
+    .kaiber-logo-footer {
+        width: 56%;
+        height: 5vh;
+        top: 20%;
+        margin-top: 17px;
+    }
+    .kaiber-footer-menu a {
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .nav-content {
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        background: #fba937;
+        text-align: center;
+        top: 120%;
+    }
+    .nav-right {
+        position: absolute;
+        right: 87px;
+        top: 50px;
+    }
+    .nav-right a {
+        font-size: 1.3rem
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 54px;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: translate(130px, 567%);
+        border-radius: 10px;
+        padding-left: 15px;
+        margin-left: -37px;
+    }
+    .grid-item1 {
+        text-align: left;
+        justify-content: center;
+        position: relative;
+        color: #fba937;
+        left: 5px;
+    }
+    .grid-item1 h1 {
+        font-size: 1.6rem;
+    }
+    .grid-item2 p {
+        font-size: 0.79rem;
+    }
+    .grid-item3 button {
+        position: absolute;
+        width: 150px;
+        height: 15vh;
+        background: #fba937;
+        transform: translate(96px, -49%);
+        border-radius: 10px;
+        color: white;
+        font-size: 1.8em;
+    }
+    .grid-item2 {
+        text-align: left;
+        justify-content: center;
+        position: relative;
+        color: white;
+        width: 145%;
+        padding-left: 0px;
+        padding-top: 14px;
+        left: -20%;
+    }
+    .grid-item1::before {
+        content: "";
+        position: absolute;
+        top: 1%;
+        bottom: 0;
+        left: 100%;
+        border-left: 2px solid #fba937;
+        transform: translateX(-50%);
+        height: 12vh;
+    }
+    .grid-item2::before {
+        content: "";
+        position: absolute;
+        top: -1%;
+        bottom: 0;
+        left: 107.5%;
+        border-left: 2px solid #fba937;
+        transform: translateX(-50%);
+        height: 12vh;
+    }
+    .art .menu-img img {
+        width: 222px;
+        height: 240px;
+    }
+    .menu-detail {
+        background-image: url(/img/navbar-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 20px;
+        height: 150vh;
+    }
+    /**menu-detail 1**/
+    .menu-detail .container .detail1 img {
+        padding-right: 40px;
+        width: 310px;
+        height: 26vh;
+        margin-left: 74.5px;
+    }
+    .menu-detail .container .detail1 .text h3 {
+        font-size: 1.1rem;
+    }
+    .menu-detail .container .detail1 .text p {
+        font-size: 0.7rem;
+    }
+    .menu-detail .container .detail1 .text button {
+        padding: 2px 14px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    .menu-detail .container .detail1 .text {
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding-left: 22px;
+    }
+    /**menu-detail 2**/
+    .menu-detail .container .detail2 img {
+        padding-right: 40px;
+        width: 310px;
+        height: 26vh;
+        margin-left: -1%;
+    }
+    .menu-detail .container .detail2 .text {
+        flex-grow: -1;
+        direction: rtl;
+        padding-left: 101px;
+    }
+    .menu-detail .container .detail2 .text h3 {
+        font-size: 1.1rem;
+    }
+    .menu-detail .container .detail2 .text p {
+        font-size: 0.7rem;
+    }
+    .menu-detail .container .detail2 .text button {
+        padding: 2px 5px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    /**Detail3**/
+    .menu-detail .container .detail3 {
+        padding-top: 10px
+    }
+    .menu-detail .container .detail3 .text h3 {
+        font-size: 1.1rem;
+    }
+    .menu-detail .container .detail3 .text p {
+        font-size: 0.7rem;
+    }
+    .menu-detail .container .detail3 .text button {
+        padding: 2px 9px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    .menu-detail .container .detail3 .text {
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding-left: 22px;
+    }
+    /**Detail4**/
+    .menu-detail .container .detail4 img {
+        padding-right: 40px;
+        width: 56%;
+        height: 26vh;
+        margin-left: 1%;
+    }
+    .menu-detail .container .detail4 .text {
+        flex-grow: -1;
+        direction: rtl;
+        padding-left: 73px;
+    }
+    .menu-detail .container .detail4 .text h3 {
+        font-size: 1.1rem;
+    }
+    .menu-detail .container .detail4 .text p {
+        font-size: 0.7rem;
+    }
+    .menu-detail .container .detail4 .text button {
+        padding: 2px 5px;
+        border-radius: 5px;
+        background-color: #fba937;
+    }
+    /**Hero 2**/
+    .hero:nth-child(2) {
+        display: grid;
+        grid-template-rows: 66% 134%;
+        align-items: center;
+        justify-content: center;
+    }
+    .line1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 46% 2fr;
+    }
+    .line2 {
+        padding-top: 2px;
+    }
+    .line2 p {
+        font-size: 0.56rem;
+        line-height: 0.8rem;
+        color: white;
+    }
+    /**hero 4**/
+    .hero:nth-child(4) {
+        display: grid;
+        grid-template-rows: 69% 116%;
+        align-items: center;
+        justify-content: center;
+    }
+    .line3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 46% 2fr;
+    }
+    .line4 p {
+        font-size: 0.56rem;
+        line-height: 0.8rem;
+        color: white;
+    }
+    /**Kaiber Single**/
+    .kaiber-single {
+        text-align: center;
+        margin: 0 27px;
+    }
+    .frap button {
+        position: absolute;
+        width: 200px;
+        height: 5vh;
+        border-radius: 5px;
+        top: 80%;
+        left: 40%;
+        border: 2px solid #fba937;
+        background: #0000;
+    }
+    /**Kaiber-footer**/
+    .kaiber-footer {
+        background-color: #fba937;
+        color: #fff;
+        padding: 7px 60px;
+        height: 16vh;
+        border-bottom: 2px solid #000;
+    }
+    .kaiber-logo-footer {
+        width: 56%;
+        height: 5vh;
+        top: 20%;
+        margin-top: 17px;
+    }
+    .kaiber-free {
+        padding-top: 50px;
+        width: 100%;
+        height: 52vh;
+        background: #000;
+    }
+    .Kaiber-Advertisement {
+        padding-top: 10px;
+        font-size: 0.9rem;
+    }
+    .kaiber-studio button {
+        margin-top: 50px;
+        position: relative;
+        width: 200px;
+        height: 5vh;
+        left: 40%;
+        border-radius: 5px;
+        border: 2px solid #fba937;
+        background: #0000;
+    }
+    .kaiber-free button {
+        margin-top: 20px;
+        position: relative;
+        width: 200px;
+        height: 5vh;
+        left: 39.1%;
+        border-radius: 5px;
+        border: 2px solid #fba937;
+        background: #0000;
+    }
+    .kaiber-free-title {
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .kaiber-footer-menu .left {
+        margin-left: 55px;
+    }
+    .kaiber-footer-menu .right {
+        margin-left: 7px;
+    }
+    .kaiber-footer p {
+        font-size: 0.8rem;
+    }
+    .kaiber-footer .kaiber-footer-menu {
+        display: grid;
+        grid-template-columns: 40% 2fr;
+    }
+    .kaiber-footer-menu a {
+        font-size: 1rem;
+    }
+}
